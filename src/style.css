@@ -246,7 +246,6 @@ body{
 .side-bar.header{
     display: flex;
     align-items: center;
-    opacity: 0.7;
     margin: 0 0.75rem;
 }
 
@@ -262,12 +261,44 @@ body{
 
 .options{
     margin-left:auto;
+    display: flex;
 }
 
 .options i{
     margin: 0 0.75rem;
+    opacity: 0.7;
+
 }
 
 .side-bar-content{
     margin: 0 1rem;
+}
+
+.collapse-lib{
+    display: flex;
+    align-items: center;
+    opacity: 0.65;
+    transition: opacity 0.2s linear;
+}
+
+.collapse-lib:hover{
+    opacity: 1;
+}
+
+.back-icon , .add-icon{
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.25rem;
+    opacity: 0.65;
+    transition: opacity 0.1s linear;
+}
+
+.back-icon:hover, .add-icon:hover{
+    background-color: #1E1E1E;
+    border-radius: 50%;
+    opacity: 1;
 }
