@@ -271,7 +271,11 @@ body{
 }
 
 .side-bar-content{
-    margin: 0 1rem;
+    margin: 0 0.5rem;
+    height: calc(100vh - 15rem);
+    overflow: scroll;
+    overflow-x: hidden;
+
 }
 
 .collapse-lib{
@@ -302,3 +306,77 @@ body{
     border-radius: 50%;
     opacity: 1;
 }
+
+/* CARDS */
+.cards{
+    display: flex;
+    margin: 0 0.25rem;
+}
+.cards .card{
+    background-color: #2a2a2a; 
+    margin: 0 0.275rem;
+    padding: 0.45rem 0.55rem;
+    border-radius: 1rem;
+    font-size: small;
+    font-weight: 600;
+    transition: all 0.1s linear;
+}
+
+.cards .card:hover{
+    background-color: #1F1F1F; 
+    /* selected color : #333333 */
+}
+
+.main-header{
+    margin-bottom: 0.75rem;
+}
+
+/* List Card Content */
+
+.list-card{
+    padding: 0.5rem;
+    margin: 0 auto;
+    height: 3rem;
+    display: flex;
+    border-radius: 0.25rem;
+}
+
+.list-card:hover{
+    background-color: #2A2A2A;
+}
+
+.list-card-image img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.25rem;
+}
+
+.list-card-image.artist img{
+    border-radius: 50%
+}
+
+.heading,.sub-heading{
+    margin-left: 0.65rem;
+}
+
+.heading{
+    font-weight: 500;
+    font-size: medium;
+}
+
+.sub-heading{
+    color: #A8A8A8;
+    font-weight: 600;
+    font-size:small;
+    padding-top: 0.25rem;
+}
+
+
+/* Scroll-bar */
+
+  ::-webkit-scrollbar {
+  }
+
+  ::-webkit-scrollbar {
+    background: transparent;
+  }
