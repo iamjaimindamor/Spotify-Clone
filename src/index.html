@@ -1,232 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="icon" href="../assets/logo.png"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" href="../assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="main">
-        <div class="nav-bar">
-            <div class="main-logo">
-                <img src="../assets/Spotify_Primary_Logo_RGB_White.png" class="logo"/>
-            </div>
-            <div class="center">
-
-                <div class="home-container">
-                    <div class="home-outline">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-                </div>
-
-                <div class="search-box-container">
-                    <input type="text" id="search-box" placeholder="What do you want to play?"/>
-                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>  
-                
-            </div>
-            
-            <div class="nav-button">
-                <button class="hide premium">Explore Premium</button>
-                <button class="install-button hide"><i class="fa-regular fa-circle-down"></i>&nbsp;&nbsp;Install App</button>
-                <div class="settings">
-                    <div class="notification-bell">
-                        <i class="fa-regular fa-bell "></i>
-                    </div>
-                    <div class="user">
-                        <i class="fa-regular fa-circle-user"></i>
-                    </div>
-                </div>
-            </div>
+      <div class="nav-bar">
+        <div class="main-logo">
+          <img
+            src="../assets/Spotify_Primary_Logo_RGB_White.png"
+            class="logo"
+          />
         </div>
-        <div class="content">
-            <div class="side-bar">
-                <div class="main-header">
-                    <div class="side-bar header">
-                        <div class="collapse-lib">
-                            <img src="../assets/library_icon.png" class="lib-icon"/> <h4>Your Library</h4> 
-                        </div>
-                        <div class="options"><div class="add-icon"><i class="fa-solid fa-plus "></i></div> <div class="back-icon"><i class="fa-solid fa-arrow-right"></i></div></div>
-                    </div>
-                    <div class="cards">
-                        <div class="card">Playlists</div>
-                        <div class="card">Artists</div>
-                    </div>
-                </div>
-                <div class="side-bar-content">  
-                    
-                    <div class="list-card">
-                        <div class="list-card-image">
-                            <img src="../assets/likedSongs.png"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Liked Songs</div>
-                            <div class="sub-heading">Playlist</div>
-                        </div>
-                    </div>
-                    
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/a_r_rahman_38.jpg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">A.R. Rahman</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/KK.JPG"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">K.K.</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/shreya_ghosal.jpg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Shreya Ghosal</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/ariana-grande.webp"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Ariana Grande</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/charlie.webp"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Charlie Puth</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/AnneMarie.jpg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Anne Marie</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/bruno_mars.jpeg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Bruno Mars</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/alanwalker.jpeg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Alan Walker</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-    
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/ariel.jpeg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Ariel Mancanares</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-    
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/Madison-Beer.jpg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Madison Beer</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-    
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/Adele.jpg"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Adele</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-    
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/billie.avif"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Billie Eilish</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-    
-                    <div class="list-card">
-                        <div class="list-card-image artist">
-                            <img src="../assets/Hailee_Steinfeld.webp"/>
-                        </div>
-                        <div class="list-card-title">
-                            <div class="heading">Hailee Steinfeld</div>
-                            <div class="sub-heading">Artist</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="center">
+          <div class="home-container">
+            <div class="home-outline">
+              <i class="fa-solid fa-house"></i>
             </div>
+          </div>
 
-            <div class="content-body">
-                <div class="cards">
-                    <div class="card selected">All</div>
-                    <div class="card">Music</div>
-                    <div class="card">Podcasts</div>
-                </div>
-                <div class="personalised-card">
-
-                <h2>Made For Jaimin</h2>
-                <div class="personalised-card-content">
-                    <div class="content-card">
-                        <img src="../assets/w.jpeg"/>
-                        <div class="card-label">The Weekend , Selena Gomez ...</div>
-                    </div>
-                    <div class="content-card">
-                        <img src="../assets/ldr.jpeg"/>
-                        <div class="card-label">Lana Del Ray, ROSE,aespa and ...</div>
-                    </div>
-                </div>
-                </div>
-
+          <div class="search-box-container">
+            <input
+              type="text"
+              id="search-box"
+              placeholder="What do you want to play?"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            </div>
+          </div>
         </div>
-        <div class="footer">footer</div>
+
+        <div class="nav-button">
+          <button class="hide premium">Explore Premium</button>
+          <button class="install-button hide">
+            <i class="fa-regular fa-circle-down"></i>&nbsp;&nbsp;Install App
+          </button>
+          <div class="settings">
+            <div class="notification-bell">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="user">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="side-bar">
+          <div class="main-header">
+            <div class="side-bar header">
+              <div class="collapse-lib">
+                <img src="../assets/library_icon.png" class="lib-icon" />
+                <h4>Your Library</h4>
+              </div>
+              <div class="options">
+                <div class="add-icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="back-icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">Playlists</div>
+              <div class="card">Artists</div>
+            </div>
+          </div>
+          <div class="side-bar-content">
+            <div class="list-card">
+              <div class="list-card-image">
+                <img src="../assets/likedSongs.png" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Liked Songs</div>
+                <div class="sub-heading">Playlist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/a_r_rahman_38.jpg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">A.R. Rahman</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/KK.JPG" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">K.K.</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/shreya_ghosal.jpg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Shreya Ghosal</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/ariana-grande.webp" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Ariana Grande</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/charlie.webp" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Charlie Puth</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/AnneMarie.jpg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Anne Marie</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/bruno_mars.jpeg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Bruno Mars</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/alanwalker.jpeg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Alan Walker</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/ariel.jpeg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Ariel Mancanares</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/Madison-Beer.jpg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Madison Beer</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/Adele.jpg" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Adele</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/billie.avif" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Billie Eilish</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+
+            <div class="list-card">
+              <div class="list-card-image artist">
+                <img src="../assets/Hailee_Steinfeld.webp" />
+              </div>
+              <div class="list-card-title">
+                <div class="heading">Hailee Steinfeld</div>
+                <div class="sub-heading">Artist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <div class="cards">
+            <div class="card selected">All</div>
+            <div class="card">Music</div>
+            <div class="card">Podcasts</div>
+          </div>
+
+          <div class="personalised-card">
+            <h2>Made For Jaimin</h2>
+            <div class="personalised-card-content">
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/w.jpeg" />
+                  <div class="card-label">The Weekend , Selena Gomez ...</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/ldr.jpeg" />
+                  <div class="card-label">Lana Del Ray, ROSE,aespa and ...</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="personalised-card">
+            <h2>Recently Featured</h2>
+            <div class="personalised-card-content">
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/hanumankind_runitall.jpeg" />
+                  <div class="card-label">Run It Up - HanumanKind</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/jennie-ruby.webp" />
+                  <div class="card-label">like jennie - JENNIE</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/arcane.jpeg" />
+                  <div class="card-label">
+                    Ma Meilleure Ennemie
+                  </div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/dwas.jpeg" />
+                  <div class="card-label">
+                    Die With a smile - Bruno Mars
+                  </div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/apt.jpeg" />
+                  <div class="card-label">APT. - Rose & Bruno Mars</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/sajni ve.jpeg" />
+                  <div class="card-label">Sajni Ve - Mitraz</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/ag.jpeg" />
+                  <div class="card-label">Akhiyaan Gulaab - Arijit Singh</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/earthquake.jpeg" />
+                  <div class="card-label">earthquake - Jisoo</div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+
+              <div class="card-container">
+                <div class="content-card">
+                  <img src="../assets/ua.jpeg" />
+                  <div class="card-label">
+                    Uyi Amma - Amit Trivedi
+                  </div>
+                </div>
+                <img class="play" src="../assets/icon.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">footer</div>
     </div>
-</body>
+  </body>
 </html>
