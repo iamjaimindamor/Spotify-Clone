@@ -224,10 +224,11 @@ body {
 /* Content */
 .content {
   display: flex;
+  height: calc(100vh - 9.575rem);
 }
 
 .content-body {
-  flex-grow: 1;  
+  flex-grow: 1;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -268,7 +269,7 @@ body {
 
 .side-bar-content {
   margin: 0 0.5rem;
-  height: calc(100vh - 15rem);
+  height: calc(100vh - 17.225rem);
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -457,27 +458,174 @@ img.play:hover {
   background: transparent !important;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: transparent;
   min-height: 30px;
   transition: all 1s ease-in-out;
 }
 
-
-:hover::-webkit-scrollbar-thumb{
+:hover::-webkit-scrollbar-thumb {
   background: #888888c2;
   border-radius: 25px;
 }
 
-.scrollable-content{
+.scrollable-content {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 79vh;
-
 }
 
 /* Footer */
-.footer{
-height: 200px;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 5.5rem;
+}
+
+.songInfo {
+  display: flex;
+  width: 100%;
+}
+
+.current-song {
+  align-self: center;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5px;
+}
+
+.songInfo-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.songName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.artistName {
+  font-size: 12px;
+}
+
+#addToLike {
+  align-self: center;
+  margin: 0 0.8rem 0;
+  height: 1rem;
+  width: 1rem;
+  filter: invert(1);
+  opacity: 0.6;
+}
+
+#addToLike:hover {
+  opacity: 1;
+}
+
+.songControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.playerControls {
+  display: flex;
+}
+
+#shuffle,
+#playback {
+  align-self: center;
+  width: 15px;
+  height: 15px;
+}
+
+#previousSong,
+#nextSong {
+  align-self: center;
+  width: 14px;
+  height: 14px;
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+}
+
+.playerControls img {
+  margin: 0.625rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.progressBar span {
+  font-size: 12px;
+}
+
+.volumeControls {
+  width: 100%;
+}
+
+#songBar {
+  width: 32rem;
+}
+
+.volumeControls {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.volumeControls img {
+  width: 1.2rem;
+  height: 1.2rem;
+  filter: invert(1);
+  margin: 0 8px;
+  opacity: 0.6;
+}
+
+.volumeControls img:hover {
+  opacity: 1;
+}
+
+#volumeBar {
+  margin: 2px;
+  width: 5.8125rem;
+  height: 4px;
+}
+
+/* Remove the default appearance of the range input on WebKit browsers */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #484848;
+  border-radius: 16px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #fff;
+  height: 0px;
+  width: 0px;
+  box-shadow: -407px 0 0 400px #fff;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #fff;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  box-shadow: -407px 0 0 400px #1db954;
 }
