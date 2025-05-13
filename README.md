@@ -1,4 +1,4 @@
-# <pre>Spotify-Clone</pre>
+# <pre>End to end Spotify-Clone</pre>
 
 - This is MyGaana - a Spotify Clone with End to end music streaming with .NET 9 Backend Services.
 
