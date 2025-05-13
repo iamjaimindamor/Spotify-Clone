@@ -2,9 +2,9 @@
 
 - This is MyGaana - a Spotify Clone with End to end music streaming with .NET 9 Backend Services.
 
-- Making this was quite fun , imitating spotify's web styling effect and implementing in MyGaana was fulfilling.
+- Making this was quite fun , imitating spotify's web styling effect and implementing in MyGaana was great and learned few tricks along the way.
 
--  This project of music application fulfills every aspect of full fledged audio player website with Streaming Capabilities , Play/Pause Controls , Playback , Loop/Reapeat of Songs and Playlist , Previous/Next Songs Controls , Managing Player Queue and playlists, Volume Controls , a typical music player which is already found in every browser, but this is with bit styling based on Spotify.
+-  This project of music application fulfills every aspect of full fledged audio player website with Streaming Capabilities , Play/Pause Controls , Playback , Loop/Repeat of Songs and Playlist , Previous/Next Songs Controls , Managing Player Queue and playlists, Volume Controls , a typical music player which is already found in every browser.
 
 -  MyGaana's is designed with Vanilla CSS and JavaScript Only. Backend is implement with .NET 9.0 Core API along with Supabase For storage solution of the audio files and assets of the projects.
 
